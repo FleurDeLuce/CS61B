@@ -1,4 +1,8 @@
 import java.lang.Math.*;
+<<<<<<< HEAD
+=======
+import StdDraw;
+>>>>>>> dbae847ef78a2e9d00f1b15c34cca5acdb9ac90e
 
 public class Planet {
 	public double x;
@@ -9,8 +13,13 @@ public class Planet {
 	public String img;
 	public double xNetForce;
 	public double yNetForce;
+<<<<<<< HEAD
 	public double xAccel;
 	public double yAccel;
+=======
+	public double xAcceleration;
+	public double yAcceleration;
+>>>>>>> dbae847ef78a2e9d00f1b15c34cca5acdb9ac90e
 
 	public Planet(double x, double y, double xVelocity, 
 				  double yVelocity, double mass, String img) {
@@ -70,10 +79,17 @@ public class Planet {
 
 	public void update(double dt) {
 		//this.setNetForce(planets);
+<<<<<<< HEAD
 		this.xAccel = xNetForce / this.mass;
 		this.yAccel = yNetForce / this.mass;
 		this.xVelocity += dt * xAccel;
 		this.yVelocity += dt * yAccel;
+=======
+		this.xAcceleration = xNetForce / this.mass;
+		this.yAcceleration = yNetForce / this.mass;
+		this.xVelocity += dt * xAcceleration;
+		this.yVelocity += dt * yAcceleration;
+>>>>>>> dbae847ef78a2e9d00f1b15c34cca5acdb9ac90e
 		this.x += dt*xVelocity;
 		this.y += dt*yVelocity;
 	}
